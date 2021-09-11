@@ -9,6 +9,14 @@
         {% endif %}
     </head>
     <body>
+         <!-- Major sources section  -->
+         <h3> Major sources</h3>
+         <ul>
+            {% for source in major_source %}
+                <li>{{source.name}}</li>
+                <li>{{source.description}}</li>
+            {% endfor %}
+        </ul>
 
     </body>
 </html>
