@@ -10,13 +10,18 @@
     </head>
     <body>
          <!-- Major sources section  -->
-         <h3> Major sources</h3>
+         <!-- <h3> Major sources</h3>
          <ul>
-            {% for source in major_source %}
-                <li>{{source.name}}</li>
-                <li>{{source.description}}</li>
+            {% for category in major_source %}
+                <li>{{category.name}}</li>
+                <li>{{category.description}}</li>
             {% endfor %}
-        </ul>
+        </ul> -->
+        {% for source in major_source %}
+                <h1>{{source.name}}</h1>
+                <h3>{{source.id}}</h3>
+                <!-- <li>{{source.description}}</li> -->
+            {% endfor %}
 
     </body>
 </html>
