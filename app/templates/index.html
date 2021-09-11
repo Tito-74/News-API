@@ -1,5 +1,5 @@
-{% extends 'base.html'%}
-<!DOCTYPE html>
+{% extends 'bootstrap/base.html'%}
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,7 +9,7 @@
         <title> Welcome to the best Movie Review website </title>
         {% endif %}
     </head>
-    <body>
+    <body> -->
          <!-- Major sources section  -->
          <!-- <h3> Major sources</h3>
          <ul>
@@ -18,11 +18,13 @@
                 <li>{{category.description}}</li>
             {% endfor %}
         </ul> -->
-        {% for source in major_source %}
+        {% block content %}
+            {% for source in major_source %}
                 <h1>{{source.name}}</h1>
                 <h3>{{source.id}}</h3>
                 <!-- <li>{{source.description}}</li> -->
             {% endfor %}
+        {% endblock%}
 
-    </body>
-</html>
+    <!-- </body>
+</html> -->
