@@ -1,4 +1,4 @@
-## Password Locker App
+## News API website 
 
 
 ## Author
@@ -11,8 +11,8 @@ This is a website that display all news channel available and  also the news art
 To have a copy of this project, you can clone it from my github account using these steps;
 
 Open your terminal (Ctrl+Alt+T)
-git clone $ git clone https://github.com/Tito-74/Password-Locker.git
-cd news api
+git clone $ git clone https://github.com/Tito-74/News-API.git
+cd News-API
 code . or atom . based on your favorite text editor you have.
 
 ## Technologies Used
