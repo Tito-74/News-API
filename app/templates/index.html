@@ -21,7 +21,8 @@
         {% block content %}
             {% for source in major_source %}
                 <h1>{{source.name}}</h1>
-                <h3>{{source.id}}</h3>
+                <a type="button" class="btn btn-primary" href="/sources/{{source.id}}" target="_blank">visit<span>{{source.name}}</span></a>
+                <!-- <h3>{{source.id}}</h3> -->
                 <!-- <li>{{source.description}}</li> -->
             {% endfor %}
         {% endblock%}

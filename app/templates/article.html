@@ -1,2 +1,17 @@
-<h1> Hello Movie {{ id }} </h1>
-<h2>{{mass}}</h2>
+{% extends 'base.html'%}
+<!-- Content block -->
+{% block content %}
+<div class="container">
+    <!-- Poster background -->
+    <div class="row">
+      {%for article in articles%}
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
+            <img src="{{ article.image }}" alt="image" class="img-responsive">
+            <!-- <h3>{{ article.image }}</h3> -->
+            <h5 class="overview"> {{ article.description}}</h5>
+            <p class="Date"> <b> Published on:{{ article.publishedAt }}</b> </p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

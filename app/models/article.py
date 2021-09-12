@@ -4,7 +4,8 @@ class Article:
     '''
 
     def __init__(self,author,title,description,url,urlToImage,publishedAt,content):
-        self.author =id
+        # self.id=id
+        self.author =author
         self.title = title
         self.description = description
         self.url = url

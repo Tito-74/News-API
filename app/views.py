@@ -22,12 +22,12 @@ def index():
     # return render_template('index.html', title=title, major_source= major_source)
 
 
-@app.route('/article/<article_id>')
-def article(article_id):
+@app.route('/sources/<id>')
+def article(id):
 
     '''
-    View movie page function that returns the movie details page and its data
+    View news page function that returns the news details page and its data
     '''
-    articles = getting_articles('article_id')
+    articles_news = getting_articles(id)
     
-    return render_template('article.html',id = article_id)
+    return render_template('article.html',id = id, articles = articles_news )
