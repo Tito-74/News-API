@@ -98,12 +98,12 @@ def process_articles(articles_list):
             title = article_response.get('title')
             description = article_response.get('description')
             url = article_response.get('url')
-            image = article_response.get('urlToImage')
+            urlToImage = article_response.get('urlToImage')
             publishedAt = article_response.get('publishedAt')
             content = article_response.get('content')
             dates = datetime.strptime(publishedAt, '%Y-%m-%dT%H:%M:%SZ')
-            date = dates.strftime('%Y-%m-%d')
-            articles_result = Article( author, title, description, url, image, date, content)
+            date = dates.strftime('%Y.%m.%d')
+            articles_result = Article( author, title, description, url, urlToImage, date, content)
             articles_object.append(articles_result)
         return articles_object
     
